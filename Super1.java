@@ -14,7 +14,7 @@ class Child{
 	public static void main(String args[]){
 		Parent p= new Parent();
 		Grandparent g= new Grandparent();
-		g.show(8);
+		//g.show(8);
 		p.show(5);
 		System.out.println("value of x is--->"+p.i);
 	}

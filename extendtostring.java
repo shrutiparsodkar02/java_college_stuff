@@ -10,7 +10,7 @@ class College{
 class University extends College{
 	String uni_name;
 	University(String uni_name){
-		super();
+		//super();
 		this.uni_name=uni_name;
 	}
 	public static void main(String args[]){
