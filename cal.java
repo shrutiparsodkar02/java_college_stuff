@@ -74,9 +74,6 @@ class EngCalculator{
 			}
 		}
 		return -1;
-		
-	
-	
 	
 	}
 	/*double ComplexNumber(int r1,int r2,float i1,float i2){
