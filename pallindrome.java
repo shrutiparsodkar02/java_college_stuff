@@ -18,7 +18,7 @@ class PallindromeString{
 		return s1;
 	}
 	String[] arrayOfRandomString(){
-		String[] s1=new String[10000];
+		String[] s1=new String[9000000];
 		for(int i=0;i<s1.length;i++){
 			s1[i]=randomString_5_letters();
 		}
