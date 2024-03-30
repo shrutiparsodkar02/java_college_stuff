@@ -109,10 +109,11 @@ class PallindromeString{
 		//System.out.println(p1.Approach2(s1));
 		long[] arr1=new long[10000];
 		long[] arr2=new long[10000];
+		long starttime=0;
+		long endtime=0;
 		int i=0;
 		while(i<10){
-			long starttime=0;
-			long endtime=0;
+			
 			starttime=System.nanoTime();
 			p1.Approach1(s1);
 			endtime=System.nanoTime();
