@@ -17,7 +17,7 @@ class Person{
 		this.year=year;
 	}
 }
-/*class Faculty extends Person{
+class Faculty extends Person{
 	String dept_of_faculty;
 	void getdept_of_faculty(String dept_of_faculty){
 		this.dept_of_faculty=dept_of_faculty;	
@@ -25,13 +25,13 @@ class Person{
 	void displayDetails_of_faculty(){
 		System.out.println("Displaying faculty details---->")
 		System.out.println("name entered is---->"+name);
-		
+		System.out.println("department of faculty is---->"+dept_of_faculty);
 		System.out.println("mobile num entered is---->"+mobile_num);
 	}
 	
 
 
-}*/
+}
 class Librarian{
 	void displayLibrarianDetails(String name,long mob_num){
 		System.out.println("librarain is--->"+name);
