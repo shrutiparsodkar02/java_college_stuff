@@ -26,6 +26,6 @@ class MixFraction{
 	} 
 	public static void main(String args[]){
 		MixFraction m=new MixFraction();
-		m.mixFraction(9,0);
+		m.mixFraction(9,2);
 	}
 }

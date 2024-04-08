@@ -31,10 +31,18 @@ class ECIndia implements voter,EC {
 //override method can throw only unchecked exception
 /*In Java, Exception is a class that is typically used for handling exceptions, but it doesn't have a constructor that directly accepts a String parameter. If you want to throw an exception with a specific message, you need to create an instance of a subclass of Exception, such as RuntimeException, IllegalArgumentException, or create your own custom exception class that extends Exception.*/
 //here i am creating my own exception
+	
 	/*public void checkValidVoter(int minage) throws InvalidVoter {
 		
 			if(age>minage){
 				throw new InvalidVoter("");
+			}
+		
+	}*/
+	/*public void checkValidVoter(int minage) throws RuntimeException {
+		
+			if(age>minage){
+				throw new RuntimeException("INVALID");
 			}
 		
 	}*/
@@ -67,15 +75,15 @@ class ElectionCommision2024  {
 	public static void main(String args[]) throws Exception{
 	ECIndia eci =new ECIndia(18);
 	ECBrazil ecb =new ECBrazil(16);
-	//eci.checkValidVoter(5);
-	eci.castvote();
-	//ecb.checkValidVoter(5);
+	eci.checkValidVoter(5);
+	//eci.castvote();
+	ecb.checkValidVoter(5);
 	}
 }
 //creating my own own custom exception class that extends Exception so that i can pass string as arugment it it
 class InvalidVoter extends RuntimeException {
 	InvalidVoter(String msg){
-		super("invalid voter in india");
+		super(msg);
 	}
 } 
 class InvalidVoter2 extends RuntimeException {
