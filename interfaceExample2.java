@@ -4,8 +4,9 @@ interface sum{
 	int b=20;
 	void Add(int a, int b);
 }
-class Addition implements sum{
-	public void Add(int a,int b){
+class Addition implements sum{ 
+//while writing asscess specifier to interface methods we cannot use protected and private because it will throw error -->attempting to assign weaker access privileges; was public
+	protected void Add(int a,int b){
 		System.out.println(a+b);
 	}
 	public static void main(String args[]){
